@@ -1,16 +1,38 @@
-*{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
+
 body {
-font-family: 'Overpass',sans-serif
+    font-family: 'Overpass', sans-serif
 }
-h1,h2,h3,h4,h5,h6{
-    text-align: center; 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
 }
-nav{
+
+nav {
     background-color: #A40606;
+    margin-bottom: 5%;
 }
+
+nav ul {
+    width: 200px;
+    margin: 0 auto;
+}
+
 nav ul li {
-display: block
+    display: inline;
+}
+
+section {
+    border: 1px solid red;
+    width: 29%;
+    padding: 2%;
+    float: left;
 }
