@@ -33,7 +33,14 @@ nav a.active {
     margin-right: 16px;
     font-size: 17px;
   }
- 
+  
+h2{
+    text-align: left;
+}
+#photo{
+    float: right;
+}
+
 .btn {
     background-color: #4ce600;
   border: none;
@@ -41,4 +48,5 @@ nav a.active {
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
+  float: right;
 }
