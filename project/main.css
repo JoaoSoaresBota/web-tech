@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Titillium Web';
+}
+
+nav a{
+    float:left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #dddd;
+}
+nav a:hover {
+    background-color:#66b3ff;
+    color: black;
+}
+nav a.active {
+    background-color: #66b3ff;
+  color: black;
+}
+  nav input {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+ 
+.btn {
+    background-color: #4ce600;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
