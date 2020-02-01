@@ -112,9 +112,29 @@ section {
     bottom: 500px;
     font-size: 20px;
     padding-left: 3%;
-    box-shadow: 10px 10px 5px grey;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey;
+    width: 150px;
+}
+
+p {
+    font-size: 15px;
+    color: #363636;
 }
 
 #first {
-    padding-left: 5%;
+    margin-left: 5%;
+}
+
+#second {
+    padding-bottom: 155px;
+}
+
+#third {
+    padding-bottom: 101px;
+    margin-bottom: 500px;
+}
+
+#fourth {
+    padding-bottom: 85px;
 }
