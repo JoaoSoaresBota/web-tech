@@ -111,6 +111,7 @@ section {
     bottom: 500px;
     font-size: 20px;
     padding-left: 3%;
+    box-shadow: 10px 10px 5px grey;
 }
 
 #first {
