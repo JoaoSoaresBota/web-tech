@@ -77,6 +77,17 @@ h2 {
     padding-right: 20%;
     padding-top: 0px;
     float: right;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%%;
+    }
 }
 
 .btn {
