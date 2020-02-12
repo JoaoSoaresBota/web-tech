@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.stashinvest.com/assets/fonts/GT-Walsheim-Condensed-Medium.woff">
+    <link rel="stylesheet" href="main.css">
+    <title>Project</title>
+</head>
+
+<body>
+    <img src="/assets/logo.png" alt="logo" id="Logo">
+    <div class="topnav">
+        <a href="/project/index.html">Home</a>
+        <a class="active" href="market.html">Market</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+        <ul id="myUL">
+            <li><a href="#">Apple Inc</a></li>
+            <li><a href="#">Amazon.com Inc</a></li>
+            <li><a href="#">Facebook Inc</a></li>
+            <li><a href="#">Tesla Inc</a></li>
+        </ul>
+        <script>
+            function myFunction() {
+                // Declare variables
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById('myInput');
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName('li');
+
+                // Loop through all list items, and hide those who don't match the search query
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+</body>
+
+<footer>
+
+    <p>FoxDelivery Web Design, Copyright &copy; 2020</p>
+</footer>
+
+</html>
