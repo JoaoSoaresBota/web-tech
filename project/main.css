@@ -150,7 +150,6 @@ h2 {
 }
 
 .btn {
-    width: 5%;
     font-family: 'Titillium Web';
     font-style: normal;
     display: inline-flex;
@@ -163,7 +162,7 @@ h2 {
     border-radius: 25px;
     border: 0px;
     font-size: 30px;
-    font-weight: 10px;
+    font-weight: 20px;
     cursor: pointer;
     margin-bottom: 150px;
     margin-left: 60px;
@@ -186,7 +185,6 @@ h2 {
     text-align: center;
     width: 500px;
     color: #b8b8b8;
-    margin-left: 150px;
 }
 
 #phone {
