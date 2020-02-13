@@ -11,7 +11,8 @@ body {
 }
 
 #Logo {
-    width: 300px;
+    width: 100%;
+    width: 150px;
     background-color: #f4f4f4;
 }
 
@@ -127,4 +128,18 @@ body {
 .stockTitle {
     text-align: center;
     padding-top: 20px;
+}
+
+.chart {
+    width: 1000px;
+    margin: 0px;
+    float: left;
+}
+
+.technical {
+    float: left;
+}
+
+.profile {
+    float: left;
 }
