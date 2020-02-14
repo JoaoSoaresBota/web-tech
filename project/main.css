@@ -1,373 +1,369 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Titillium Web';
-    background-color: #f4f4f4;
-    height: 1600px;
-    padding-bottom: 50px;
-}
-
-.wrapper {
-    width: 1330px;
-    margin-left: 350px;
-    margin-right: 350px;
-}
-
-#Logo {
-    width: 100%;
-    width: 150px;
-    background-color: #f4f4f4;
-}
-
-.topnav {
-    background-color: #454545;
-    overflow: hidden;
-    width: 100%;
-    box-shadow: 3px 3px 3px;
-}
-
-.topnav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 12px 12px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #15b232;
-    color: white;
-}
-
-
-/* Dropdown Button */
-
-.dropbtn {
-    background-color: #454545;
-    color: white;
-    font-family: 'Titillium Web';
-    padding: 10px 10px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-}
-
-
-/* Dropdown button on hover & focus */
-
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: #ddd;
-    color: black;
-}
-
-
-/* The search field */
-
-#myInput {
-    font-size: 14px;
-    padding: 12px 12px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-}
-
-
-/* The search field when it gets focus/clicked on */
-
-#myInput:focus {
-    position: relative;
-    display: inline-block;
-}
-
-
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f6f6f6;
-    border: 1px solid #ddd;
-    z-index: 1;
-}
-
-
-/* Links inside the dropdown */
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
-}
-
-
-/* Change color of dropdown links on hover */
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-}
-
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-
-.show {
-    display: block;
-}
-
-#toptitle {
-    width: 40%;
-    text-align: left;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 50%;
-    font-size: 70px;
-    margin-top: 1px;
-    margin-right: 800px;
-    border-right: 0px;
-    margin-right: 0px;
-}
-
-#content {
-    width: 100%;
-    height: 1550px;
-    padding-bottom: 100px;
-}
-
-h2 {
-    text-align: left;
-    color: black;
-}
-
-.btn {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    display: inline-flex;
-    position: relative;
-    text-align: center;
-    height: 60px;
-    padding: 0 130px;
-    color: #fff;
-    background-color: #15b232;
-    border-radius: 25px;
-    border: 0px;
-    font-size: 30px;
-    font-weight: 20px;
-    cursor: pointer;
-    margin-bottom: 150px;
-    margin-left: 60px;
-}
-
-.btn:hover {
-    background: #ddd;
-    color: black;
-}
-
-#description {
-    padding-top: 150px;
-    padding-left: 5%;
-    padding-bottom: 200px;
-}
-
-#desc {
-    font-size: 30px;
-    font-weight: 200;
-    text-align: center;
-    width: 500px;
-    color: #b8b8b8;
-}
-
-#phone {
-    max-width: 30%;
-    padding-right: 20%;
-    padding-top: 0px;
-    float: right;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-}
-
-.marketGraph {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: 0%;
+    * {
+        margin: 0;
+        padding: 0;
     }
-    to {
-        opacity: 100%;
+    
+    body {
+        font-family: 'Titillium Web';
+        background-color: #f4f4f4;
+        height: 1600px;
+        padding-bottom: 50px;
     }
-}
-
-.allsections {
-    width: 100%;
-    height: 40%;
-    padding-bottom: 50px;
-}
-
-section {
-    float: left;
-    font-size: 27px;
-    border-radius: 15px;
-    width: 150px;
-    text-align: center;
-    margin-top: 80px;
-}
-
-p {
-    margin-top: 10%;
-    font-size: 20px;
-    color: #363636;
-}
-
-#first {
-    margin-left: 15%;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 6s;
-    width: 300px;
-    height: 510px;
-    margin-right: 90px;
-}
-
-#second {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 6s;
-    width: 300px;
-    height: 500px;
-    margin-right: 90px;
-}
-
-#third {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 6s;
-    width: 300px;
-    height: 500px;
-    margin-right: 90px;
-}
-
-#fourth {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 6s;
-    width: 300px;
-    height: 500px;
-    margin-right: 90px;
-}
-
-#PriceIcon {
-    margin-top: 10px;
-    width: 130px;
-    opacity: 40%;
-}
-
-#alert {
-    opacity: 40%;
-    margin-top: 10px;
-    width: 130px;
-}
-
-#NewsIcon {
-    opacity: 40%;
-    margin-top: 10px;
-    width: 130px;
-}
-
-#ToolsIcon {
-    opacity: 40%;
-    margin-top: 10px;
-    width: 130px;
-}
-
-footer {
-    padding: 15px;
-    margin-left: 3%;
-}
-
-.marketTitle {
-    text-align: center;
-}
-
-.tradingview-widget-copyright {
-    padding-right: 8%;
-}
-
-.calendar {
-    width: 515px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.brand {
-    padding-left: 10%;
-}
-
-@media (max-width: 700px) {
-    .topnav input[type=text] {
-        padding: 0px;
+    
+    .wrapper {
+        width: 1330px;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    
+    li,
+    a,
+    button {
+        font-size: 20px;
+        color: #ddd;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10%;
+        padding-top: 20px;
+        background-color: #2b2b2b;
+    }
+    
+    #Logo {
+        padding-bottom: 20px;
+        width: 150px;
+        height: 25px;
+    }
+    
+    .links {
+        list-style: none;
+    }
+    
+    .links li {
+        position: relative;
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+    .links li a {
+        transition: all 0.3s ease 0s;
+    }
+    
+    .links li a:hover {
+        color: rgb(7, 178, 16);
+    }
+    
+    .item ul li a {
+        transform: scale(1);
+        transition: 0.8s;
+        display: block;
+    }
+    
+    .item ul li a.hide-item {
+        transform: scale(0);
+    }
+    
+    .search-form {
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50);
+        width: 600px;
+        height: 44px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+    
+    .search-form.active {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.5s;
+        transform: translateX(-50%);
+    }
+    
+    .search-form input {
+        width: 100%;
+        height: 44px;
+        background-color: transparent;
+        color: #fff;
         border: none;
-        margin-top: 0px;
-        margin-right: 0px;
-        font-size: 0px;
+        outline: none;
+        font-size: 16px;
     }
+    
+    .search-form::placeholder {
+        color: #fff;
+    }
+    
+    .search-form::before {
+        content: '\f002';
+        position: absolute;
+        top: 12px;
+        left: -26px;
+        font-size: 18px;
+    }
+    
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 44px;
+        color: #fff;
+        line-height: 44px;
+        font-size: 18px;
+        text-align: right;
+        width: 20px;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .close.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
     #toptitle {
-        text-align: center;
-        padding-left: 2%;
-        padding-right: 2%;
-        font-size: 60px;
+        width: 40%;
+        text-align: left;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 50%;
+        font-size: 70px;
         margin-top: 1px;
-        margin-right: 0px;
+        margin-right: 800px;
         border-right: 0px;
         margin-right: 0px;
     }
-    #phone {
-        width: 400px;
-        margin-right: 25px;
+    
+    #content {
+        width: 100%;
+        height: 1550px;
+        padding-bottom: 100px;
     }
+    
+    h2 {
+        text-align: left;
+        color: black;
+    }
+    
     .btn {
-        margin-top: 50px;
-        margin-bottom: 100px;
-        margin-left: 110px;
-    }
-    #desc {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        display: inline-flex;
+        position: relative;
+        text-align: center;
+        height: 60px;
+        padding: 0 130px;
+        color: #fff;
+        background-color: #15b232;
+        border-radius: 25px;
+        border: 0px;
+        font-size: 30px;
+        font-weight: 20px;
+        cursor: pointer;
+        margin-bottom: 150px;
         margin-left: 60px;
     }
+    
+    .btn:hover {
+        background: #ddd;
+        color: black;
+    }
+    
+    #description {
+        padding-top: 150px;
+        padding-left: 5%;
+        padding-bottom: 200px;
+    }
+    
+    #desc {
+        font-size: 30px;
+        font-weight: 200;
+        text-align: center;
+        width: 500px;
+        color: #b8b8b8;
+    }
+    
+    #phone {
+        max-width: 30%;
+        padding-right: 20%;
+        padding-top: 0px;
+        float: right;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+    }
+    
+    .marketGraph {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+        }
+    }
+    
     .allsections {
         width: 100%;
-        height: 100%;
+        height: 40%;
         padding-bottom: 50px;
     }
+    
     section {
-        float: center;
+        float: left;
+        font-size: 27px;
+        border-radius: 15px;
+        width: 150px;
+        text-align: center;
         margin-top: 80px;
     }
+    
+    p {
+        margin-top: 10%;
+        font-size: 20px;
+        color: #363636;
+    }
+    
     #first {
-        margin-left: 28%;
+        margin-left: 15%;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 6s;
+        width: 300px;
+        height: 510px;
+        margin-right: 90px;
     }
+    
     #second {
-        margin-left: 28%;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 6s;
+        width: 300px;
+        height: 500px;
+        margin-right: 90px;
     }
+    
     #third {
-        margin-left: 28%;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 6s;
+        width: 300px;
+        height: 500px;
+        margin-right: 90px;
     }
+    
     #fourth {
-        margin-left: 28%;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 6s;
+        width: 300px;
+        height: 500px;
+        margin-right: 90px;
     }
-}
+    
+    #PriceIcon {
+        margin-top: 10px;
+        width: 130px;
+        opacity: 40%;
+    }
+    
+    #alert {
+        opacity: 40%;
+        margin-top: 10px;
+        width: 130px;
+    }
+    
+    #NewsIcon {
+        opacity: 40%;
+        margin-top: 10px;
+        width: 130px;
+    }
+    
+    #ToolsIcon {
+        opacity: 40%;
+        margin-top: 10px;
+        width: 130px;
+    }
+    
+    footer {
+        padding: 15px;
+        margin-left: 3%;
+    }
+    
+    .marketTitle {
+        text-align: center;
+    }
+    
+    .tradingview-widget-copyright {
+        padding-right: 8%;
+    }
+    
+    .calendar {
+        width: 515px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .brand {
+        padding-left: 10%;
+    }
+    
+    @media (max-width: 700px) {
+        .topnav input[type=text] {
+            padding: 0px;
+            border: none;
+            margin-top: 0px;
+            margin-right: 0px;
+            font-size: 0px;
+        }
+        #toptitle {
+            text-align: center;
+            padding-left: 2%;
+            padding-right: 2%;
+            font-size: 60px;
+            margin-top: 1px;
+            margin-right: 0px;
+            border-right: 0px;
+            margin-right: 0px;
+        }
+        #phone {
+            width: 400px;
+            margin-right: 25px;
+        }
+        .btn {
+            margin-top: 50px;
+            margin-bottom: 100px;
+            margin-left: 110px;
+        }
+        #desc {
+            margin-left: 60px;
+        }
+        .allsections {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 50px;
+        }
+        section {
+            float: center;
+            margin-top: 80px;
+        }
+        #first {
+            margin-left: 28%;
+        }
+        #second {
+            margin-left: 28%;
+        }
+        #third {
+            margin-left: 28%;
+        }
+        #fourth {
+            margin-left: 28%;
+        }
+    }

@@ -11,47 +11,18 @@
 </head>
 
 <body>
-    <img src="/assets/logo.png" alt="logo" id="Logo">
-    <div class="topnav">
-        <a href="/project/index.html">Home</a>
-        <a href="/project/market.html">Market</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-    </div>
-
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Stocks</button>
-        <div id="myDropdown" class="dropdown-content">
-            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-            <a href="/project/equities/apple.html">Apple Inc</a>
-            <a href="/project/equities/amazon.html">Amazon Inc</a>
-            <a href="/project/equities/facebook.html">Facebook Inc</a>
-            <a href="/project/equities/tesla.html">Tesla Inc</a>
-            
-        </div>
-        <script>
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-            function filterFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                div = document.getElementById("myDropdown");
-                a = div.getElementsByTagName("a");
-                for (i = 0; i < a.length; i++) {
-                    txtValue = a[i].textContent || a[i].innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        a[i].style.display = "";
-                    } else {
-                        a[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
-    </div>
-    
+    <header>
+        <img src="/assets/logo.png" alt="logo" id="Logo">
+        <nav>
+            <ul class="links">
+                <li><a href="/project/index.html">Home</a></li>
+                <li><a href="/project/market.html">Market</a></li>
+                <li><a href="/project/contact.html">Contact</a></li>
+                <li><a href="/project/about.html">About</a></li>
+            </ul>
+        </nav>
+        <a href="#"><button class="cta">Stocks</button></a>
+    </header>
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
@@ -77,105 +48,108 @@
         </script>
     </div>
     <div class="wrapper">
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-            {
-                "symbol": "NASDAQ:FB",
-                "width": 1330,
-                "locale": "en",
-                "colorTheme": "light",
-                "isTransparent": false
-            }
-        </script>
-    </div>
-    <!-- TradingView Widget END -->
-    <!-- CHART BEGIN -->
-    <div class="chart">
-        <div id="tradingview_bac01"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-        <script type="text/javascript">
-            new TradingView.widget({
-                "width": 1330,
-                "height": 400,
-                "symbol": "NASDAQ:FB",
-                "interval": "D",
-                "timezone": "Etc/UTC",
-                "theme": "Light",
-                "style": "1",
-                "locale": "en",
-                "toolbar_bg": "#f1f3f6",
-                "enable_publishing": false,
-                "allow_symbol_change": true,
-                "container_id": "tradingview_bac01"
-            });
-        </script>
-    </div>
-    <!-- CHART END -->
-    <!-- TECHNICAL BEGIN -->
-    <div class="technical">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-            {
-                "interval": "1m",
-                "width": 425,
-                "colorTheme": "light",
-                "isTransparent": false,
-                "height": 400,
-                "symbol": "NASDAQ:AAPL",
-                "showIntervalTabs": true,
-                "locale": "en"
-            }
-        </script>
-    </div>
-    <!-- TECHNICAL END -->
-    <!-- PROFILE BEGIN -->
-    <div class="profile">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
-            {
-                "symbol": "NASDAQ:FB",
-                "colorTheme": "light",
-                "isTransparent": false,
-                "largeChartUrl": "",
-                "displayMode": "regular",
-                "width": "425",
-                "height": "400",
-                "locale": "en"
-            }
-        </script>
-    </div>
-    <!-- PROFILE END -->
-    <!-- DATA BEGIN -->
-    <div class="data">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+                {
+                    "symbol": "NASDAQ:FB",
+                    "width": 1330,
+                    "locale": "en",
+                    "colorTheme": "light",
+                    "isTransparent": false
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!-- CHART BEGIN -->
+        <div class="chart">
+            <div id="tradingview_bac01"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": 1330,
+                    "height": 400,
+                    "symbol": "NASDAQ:FB",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "Light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_bac01"
+                });
+            </script>
+        </div>
+        <!-- CHART END -->
+        <!-- TECHNICAL BEGIN -->
+        <div class="technical">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                {
+                    "interval": "1m",
+                    "width": 425,
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "height": 400,
+                    "symbol": "NASDAQ:AAPL",
+                    "showIntervalTabs": true,
+                    "locale": "en"
+                }
+            </script>
+        </div>
+        <!-- TECHNICAL END -->
+        <!-- PROFILE BEGIN -->
+        <div class="profile">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
+                {
+                    "symbol": "NASDAQ:FB",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "largeChartUrl": "",
+                    "displayMode": "regular",
+                    "width": "425",
+                    "height": "400",
+                    "locale": "en"
+                }
+            </script>
+        </div>
+        <!-- PROFILE END -->
+        <!-- DATA BEGIN -->
+        <div class="data">
             <div class="tradingview-widget-container__widget"></div>
             <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
-            {
-            "symbol": "NASDAQ:FB",
-            "width": 480,
-            "height": 400,
-            "colorTheme": "light",
-            "isTransparent": false,
-            "locale": "en"
-          }
+                {
+                    "symbol": "NASDAQ:FB",
+                    "width": 480,
+                    "height": 400,
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en"
+                }
             </script>
-          </div>
-          <!-- DATA END -->
+        </div>
+        <!-- DATA END -->
     </div>
 </body>
 
 <footer>
     <div class="wrapper_2">
         <h4>FoxDelivery Web Design, Copyright &copy; 2020</h4>
-        <p>Risk Disclosure: Trading in financial instruments and/or cryptocurrencies involves high risks including the risk of losing some, or all, of your investment amount, and may not be suitable for all investors. Prices of cryptocurrencies are extremely volatile and may be affected by external factors such as financial, regulatory or political events. Trading on margin increases the financial risks.
-                Before deciding to trade in financial instrument or cryptocurrencies you should be fully informed of the risks and costs associated with trading the financial markets, carefully consider your investment objectives, level of experience, and risk appetite, and seek professional advice where needed.
-                Fusion Media would like to remind you that the data contained in this website is not necessarily real-time nor accurate. The data and prices on the website are not necessarily provided by any market or exchange, but may be provided by market makers, and so prices may not be accurate and may differ from the actual price at any given market, meaning prices are indicative and not appropriate for trading purposes. Fusion Media and any provider of the data contained in this website will not accept liability for any loss or damage as a result of your trading, or your reliance on the information contained within this website.
-                It is prohibited to use, store, reproduce, display, modify, transmit or distribute the data contained in this website without the explicit prior written permission of Fusion Media and/or the data provider. All intellectual property rights are reserved by the providers and/or the exchange providing the data contained in this website.
-                Fusion Media may be compensated by the advertisers that appear on the website, based on your interaction with the advertisements or advertisers.</p>
+        <p>Risk Disclosure: Trading in financial instruments and/or cryptocurrencies involves high risks including the risk of losing some, or all, of your investment amount, and may not be suitable for all investors. Prices of cryptocurrencies are extremely
+            volatile and may be affected by external factors such as financial, regulatory or political events. Trading on margin increases the financial risks. Before deciding to trade in financial instrument or cryptocurrencies you should be fully informed
+            of the risks and costs associated with trading the financial markets, carefully consider your investment objectives, level of experience, and risk appetite, and seek professional advice where needed. Fusion Media would like to remind you that
+            the data contained in this website is not necessarily real-time nor accurate. The data and prices on the website are not necessarily provided by any market or exchange, but may be provided by market makers, and so prices may not be accurate
+            and may differ from the actual price at any given market, meaning prices are indicative and not appropriate for trading purposes. Fusion Media and any provider of the data contained in this website will not accept liability for any loss or
+            damage as a result of your trading, or your reliance on the information contained within this website. It is prohibited to use, store, reproduce, display, modify, transmit or distribute the data contained in this website without the explicit
+            prior written permission of Fusion Media and/or the data provider. All intellectual property rights are reserved by the providers and/or the exchange providing the data contained in this website. Fusion Media may be compensated by the advertisers
+            that appear on the website, based on your interaction with the advertisements or advertisers.</p>
 
     </div>
-        
+
 
 </footer>
 
