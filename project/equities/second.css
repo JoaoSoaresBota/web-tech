@@ -10,6 +10,13 @@ body {
     padding-bottom: 50px;
 }
 
+.wrapper{
+    width: 1330px;
+    height: 1400px;
+    margin-left: 285.6px;
+    margin-right: 285.6px;
+}
+
 #Logo {
     width: 100%;
     width: 150px;
@@ -130,16 +137,42 @@ body {
     padding-top: 20px;
 }
 
-.chart {
-    width: 1000px;
-    margin: 0px;
-    float: left;
-}
-
 .technical {
     float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile {
     float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+.data{
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper_2{
+    width: 1330px;
+    height: 200px;
+    margin-left: 285.6px;
+    margin-right: 285.6px;
+    margin-bottom: 100px;
+    background-color: #454545;
+    text-align: center;
+    color: #ddd;
+}
+h4{
+    color: white;
+    font-size: 20px;
+}
+p{
+    color: #a6a6a6;
+    font-size: 15px;
+}
+
+

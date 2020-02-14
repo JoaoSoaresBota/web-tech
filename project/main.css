@@ -10,6 +10,12 @@ body {
     padding-bottom: 50px;
 }
 
+.wrapper{
+    width: 1330px;
+    margin-left: 285.6px;
+    margin-right: 285.6px;
+}
+
 #Logo {
     width: 100%;
     width: 150px;
@@ -197,7 +203,9 @@ h2 {
 }
 
 .marketGraph {
-    padding-left: 8%;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 @-webkit-keyframes fade {
@@ -301,12 +309,16 @@ footer {
 }
 
 .calendar {
-    padding-left: 37%;
+    width: 515px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .brand {
     padding-left: 10%;
 }
+
 
 @media (max-width: 700px) {
     .topnav input[type=text] {
