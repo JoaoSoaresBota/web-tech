@@ -75,105 +75,110 @@
         </script>
     </div>
     <div class="wrapper">
-    <!-- TradingView Widget BEGIN -->
-    <div class="stock">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-            {
-                "symbol": "NASDAQ:TSLA",
-                "width": 1330,
-                "locale": "en",
-                "colorTheme": "light",
-                "isTransparent": false
-            }
-        </script>
+        <!-- TradingView Widget BEGIN -->
+        <div class="stock">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+                {
+                    "symbol": "NASDAQ:TSLA",
+                    "width": 1330,
+                    "locale": "en",
+                    "colorTheme": "light",
+                    "isTransparent": false
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="chart">
+            <div id="tradingview_bac01"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": 1330,
+                    "height": 400,
+                    "symbol": "NASDAQ:TSLA",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "Light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_bac01"
+                });
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="technical">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                {
+                    "interval": "1m",
+                    "width": 425,
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "height": 400,
+                    "symbol": "NASDAQ:TSLA",
+                    "showIntervalTabs": true,
+                    "locale": "en"
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="profile">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
+                {
+                    "symbol": "NASDAQ:TSLA",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "largeChartUrl": "",
+                    "displayMode": "regular",
+                    "width": "425",
+                    "height": "400",
+                    "locale": "en"
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="data">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+                {
+                    "symbol": "NASDAQ:TSLA",
+                    "width": 480,
+                    "height": 400,
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en"
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
     </div>
-    <!-- TradingView Widget END -->
-    <!-- TradingView Widget BEGIN -->
-    <div class="chart">
-        <div id="tradingview_bac01"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-        <script type="text/javascript">
-            new TradingView.widget({
-                "width": 1330,
-                "height": 400,
-                "symbol": "NASDAQ:TSLA",
-                "interval": "D",
-                "timezone": "Etc/UTC",
-                "theme": "Light",
-                "style": "1",
-                "locale": "en",
-                "toolbar_bg": "#f1f3f6",
-                "enable_publishing": false,
-                "allow_symbol_change": true,
-                "container_id": "tradingview_bac01"
-            });
-        </script>
-    </div>
-    <!-- TradingView Widget END -->
-    <!-- TradingView Widget BEGIN -->
-    <div class="technical">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-            {
-                "interval": "1m",
-                "width": 425,
-                "colorTheme": "light",
-                "isTransparent": false,
-                "height": 400,
-                "symbol": "NASDAQ:TSLA",
-                "showIntervalTabs": true,
-                "locale": "en"
-            }
-        </script>
-    </div>
-    <!-- TradingView Widget END -->
-    <!-- TradingView Widget BEGIN -->
-    <div class="profile">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
-            {
-                "symbol": "NASDAQ:TSLA",
-                "colorTheme": "light",
-                "isTransparent": false,
-                "largeChartUrl": "",
-                "displayMode": "regular",
-                "width": "425",
-                "height": "400",
-                "locale": "en"
-            }
-        </script>
-    </div>
-    <!-- TradingView Widget END -->
-    <!-- TradingView Widget BEGIN -->
-<div class="data">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
-        {
-        "symbol": "NASDAQ:TSLA",
-        "width": 480,
-        "height": 400,
-        "colorTheme": "light",
-        "isTransparent": false,
-        "locale": "en"
-      }
-        </script>
-      </div>
-      <!-- TradingView Widget END -->
-</div>
 
 </body>
 
 <footer>
-        <div class="wrapper_2">
-                <h4>FoxDelivery Web Design, Copyright &copy; 2020</h4>
-                <p>Risk Disclosure: Trading in financial instruments and/or cryptocurrencies involves high risks including the risk of losing some, or all, of your investment amount, and may not be suitable for all investors. Prices of cryptocurrencies are extremely volatile and may be affected by external factors such as financial, regulatory or political events. Trading on margin increases the financial risks.
-                        Before deciding to trade in financial instrument or cryptocurrencies you should be fully informed of the risks and costs associated with trading the financial markets, carefully consider your investment objectives, level of experience, and risk appetite, and seek professional advice where needed.
-                        Fusion Media would like to remind you that the data contained in this website is not necessarily real-time nor accurate. The data and prices on the website are not necessarily provided by any market or exchange, but may be provided by market makers, and so prices may not be accurate and may differ from the actual price at any given market, meaning prices are indicative and not appropriate for trading purposes. Fusion Media and any provider of the data contained in this website will not accept liability for any loss or damage as a result of your trading, or your reliance on the information contained within this website.
-                        It is prohibited to use, store, reproduce, display, modify, transmit or distribute the data contained in this website without the explicit prior written permission of Fusion Media and/or the data provider. All intellectual property rights are reserved by the providers and/or the exchange providing the data contained in this website.
-                        Fusion Media may be compensated by the advertisers that appear on the website, based on your interaction with the advertisements or advertisers.</p>
-        
-            </div>
+    <div class="wrapper_2">
+        <div id="wrapper_background">
+            <img src="/assets/logo.png" alt="bottomLogo" id="bottomLogo">
+            <h4>FoxDelivery Web Design, Copyright &copy; 2020</h4>
+            <p>Risk Disclosure: Trading in financial instruments and/or crypto currencies involves high risks including the risk of losing some, or all, of your investment amount, and may not be suitable for all investors. Prices of crypto currencies are
+                extremely volatile and may be affected by external factors such as financial, regulatory or political events. Trading on margin increases the financial risks. Before deciding to trade in financial instrument or crypto currencies you should
+                be fully informed of the risks and costs associated with trading the financial markets, carefully consider your investment objectives, level of experience, and risk appetite, and seek professional advice where needed. Fusion Media would
+                like to remind you that the data contained in this website is not necessarily real-time nor accurate. The data and prices on the website are not necessarily provided by any market or exchange, but may be provided by market makers, and
+                so prices may not be accurate and may differ from the actual price at any given market, meaning prices are indicative and not appropriate for trading purposes. FoxDelivery Web Design and any provider of the data contained in this website
+                will not accept liability for any loss or damage as a result of your trading, or your reliance on the information contained within this website. It is prohibited to use, store, reproduce, display, modify, transmit or distribute the data
+                contained in this website without the explicit prior written permission of Fusion Media and/or the data provider. All intellectual property rights are reserved by the providers and/or the exchange providing the data contained in this website.
+                FoxDelivery Web Design may be compensated by the advertisers that appear on the website, based on your interaction with the advertisements or advertisers.</p>
+        </div>
+    </div>
 
 </footer>
 

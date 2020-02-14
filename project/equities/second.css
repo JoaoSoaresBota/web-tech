@@ -10,11 +10,11 @@ body {
     padding-bottom: 50px;
 }
 
-.wrapper{
+.wrapper {
     width: 1330px;
     height: 1400px;
-    margin-left: 285.6px;
-    margin-right: 285.6px;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 
 #Logo {
@@ -150,29 +150,46 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.data{
+
+.data {
     float: left;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.wrapper_2{
+
+.wrapper_2 {
     width: 1330px;
-    height: 300px;
-    margin-left: 285.6px;
-    margin-right: 285.6px;
-    margin-bottom: 100px;
+    height: 185px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
     background-color: #454545;
     text-align: center;
     color: #ddd;
 }
-h4{
+
+h4 {
     color: white;
     font-size: 20px;
 }
-p{
+
+p {
     color: #a6a6a6;
-    font-size: 15px;
+    font-size: 10px;
 }
 
+#bottomLogo {
+    width: 120px;
+    height: 35px;
+    float: left;
+}
 
+#wrapper_background {
+    width: 900px;
+    height: 125px;
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
