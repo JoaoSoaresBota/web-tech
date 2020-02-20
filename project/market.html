@@ -11,227 +11,194 @@
 </head>
 
 <body>
-    <header>
+    <nav>
         <img src="/assets/logo.png" alt="logo" id="Logo">
-        <nav>
-            <ul class="links">
-                <li><a href="/project/index.html" class="item">Home</a></li>
-                <li><a href="#" class="item">Market</a></li>
-                <li><a href="/project/contact.html" class="item">Contact</a></li>
-                <li><a href="/project/about.html" class="item">About</a></li>
-                <div class="search-form">
-                    <form><input type="text" name="" placeholder="Search"></form>
+        <ul class="links">
+            <li><a href="/project/index.html" class="item">Home</a></li>
+            <li><a href="#" class="item">Market</a></li>
+            <li><a href="/project/contact.html" class="item">Contact</a></li>
+            <li><a href="/project/about.html" class="item">About</a></li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="border: 0;"><input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/project/equities/amazon.html">Amazon</a>
+                    <a href="/project/equities/apple.html">Apple</a>
+                    <a href="/project/equities/facebook.html">Facebook</a>
+                    <a href="/project/equities/tesla.html">Tesla</a>
                 </div>
-                <a class="close"><i class="fa fa-times"><img src="/assets/closeIcon.png" alt="close" width="18px"></i></a>
-            </ul>
-        </nav>
-        <li><a href="#" id="search_"><i class="search"></i><img src="/assets/searchIcon.png" alt="search" width="18px">Stocks</a></li>
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#search_').click(function() {
-                    $('.item').toggle('hide-item')
-                    $('.search-form').toggleClass('active')
-                    $('.close').toggleClass('active')
-                    $('#search').hide()
-                })
-                $('.close').click(function() {
-                    $('.item').toggle('hide-item')
-                    $('.search-form').toggleClass('active')
-                    $('.close').toggleClass('active')
-                })
-            })
-        </script>
+            </div>
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
 
-
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-            {
-                "symbols": [{
-                    "proName": "OANDA:SPX500USD",
-                    "title": "S&P 500"
-                }, {
-                    "proName": "OANDA:NAS100USD",
-                    "title": "Nasdaq 100"
-                }, {
-                    "description": "Dow 30",
-                    "proName": "CURRENCYCOM:US30"
-                }, {
-                    "description": "SmallCap 2000",
-                    "proName": "CME_MINI:RTY1!"
-                }],
-                "colorTheme": "light",
-                "isTransparent": false,
-                "locale": "en"
-            }
-        </script>
-    </div>
-    <!-- TradingView Widget END -->
-
-    <div class="wrapper">
-
-        <h1 class="marketTitle">Market Overview</h1>
-        <!-- TradingView Widget BEGIN -->
-        <div class="marketGraph">
-            <div class="tradingview-widget-container__widget"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-                {
-                    "width": 1330,
-                    "height": 492,
-                    "symbolsGroups": [{
-                        "name": "Indices",
-                        "originalName": "Indices",
-                        "symbols": [{
-                            "name": "OANDA:SPX500USD",
-                            "displayName": "S&P 500"
-                        }, {
-                            "name": "OANDA:NAS100USD",
-                            "displayName": "Nasdaq 100"
-                        }, {
-                            "name": "FOREXCOM:DJI",
-                            "displayName": "Dow 30"
-                        }, {
-                            "name": "INDEX:NKY",
-                            "displayName": "Nikkei 225"
-                        }, {
-                            "name": "INDEX:DEU30",
-                            "displayName": "DAX Index"
-                        }, {
-                            "name": "OANDA:UK100GBP",
-                            "displayName": "FTSE 100"
-                        }]
-                    }, {
-                        "name": "Commodities",
-                        "originalName": "Commodities",
-                        "symbols": [{
-                            "name": "CME_MINI:ES1!",
-                            "displayName": "E-Mini S&P"
-                        }, {
-                            "name": "CME:6E1!",
-                            "displayName": "Euro"
-                        }, {
-                            "name": "COMEX:GC1!",
-                            "displayName": "Gold"
-                        }, {
-                            "name": "NYMEX:CL1!",
-                            "displayName": "Crude Oil"
-                        }, {
-                            "name": "NYMEX:NG1!",
-                            "displayName": "Natural Gas"
-                        }, {
-                            "name": "CBOT:ZC1!",
-                            "displayName": "Corn"
-                        }]
-                    }, {
-                        "name": "Bonds",
-                        "originalName": "Bonds",
-                        "symbols": [{
-                            "name": "CME:GE1!",
-                            "displayName": "Eurodollar"
-                        }, {
-                            "name": "CBOT:ZB1!",
-                            "displayName": "T-Bond"
-                        }, {
-                            "name": "CBOT:UB1!",
-                            "displayName": "Ultra T-Bond"
-                        }, {
-                            "name": "EUREX:FGBL1!",
-                            "displayName": "Euro Bund"
-                        }, {
-                            "name": "EUREX:FBTP1!",
-                            "displayName": "Euro BTP"
-                        }, {
-                            "name": "EUREX:FGBM1!",
-                            "displayName": "Euro BOBL"
-                        }]
-                    }, {
-                        "name": "Forex",
-                        "originalName": "Forex",
-                        "symbols": [{
-                            "name": "FX:EURUSD"
-                        }, {
-                            "name": "FX:GBPUSD"
-                        }, {
-                            "name": "FX:USDJPY"
-                        }, {
-                            "name": "FX:USDCHF"
-                        }, {
-                            "name": "FX:AUDUSD"
-                        }, {
-                            "name": "FX:USDCAD"
-                        }]
-                    }],
-                    "colorTheme": "light",
-                    "isTransparent": false,
-                    "locale": "en"
+                function filterFunction() {
+                    var input, filter, ul, li, a, i;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    div = document.getElementById("myDropdown");
+                    a = div.getElementsByTagName("a");
+                    for (i = 0; i < a.length; i++) {
+                        txtValue = a[i].textContent || a[i].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            a[i].style.display = "";
+                        } else {
+                            a[i].style.display = "none";
+                        }
+                    }
                 }
             </script>
-        </div>
-        <!-- TradingView Widget END -->
 
-        <h1 class="marketTitle">News</h1>
-
-        <div class="feedgrabbr_widget" id="fgid_0cd9720627bf443270ba85f11"></div>
-        <script>
-            if (typeof(fg_widgets) === "undefined") fg_widgets = new Array();
-            fg_widgets.push("fgid_0cd9720627bf443270ba85f11");
-        </script>
-        <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
-
-        <h1 class="marketTitle">Economic Calendar</h1>
-
-        <!-- TradingView Widget BEGIN -->
-        <div class="calendar">
-            <div class="tradingview-widget-container__widget"></div>
-
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
-                {
-                    "colorTheme": "light",
-                    "isTransparent": false,
-                    "width": "510",
-                    "height": "600",
-                    "locale": "en",
-                    "importanceFilter": "-1,0,1"
-                }
-            </script>
-            <div class="brand"><a href="https://www.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank"><span class="blue-text">Economic Calendar</span></a> by TradingView</div>
-        </div>
-        <!-- TradingView Widget END -->
-    </div>
-
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                    {
+                        "symbols" [{
+                            "proName": "OANDA:SPX500USD",
+                            "title": "S&P 500"
+                        }, {
+                            "proName": "OANDA:NAS100USD",
+                            "title": "Nasdaq 100"
+                        }, {
+                            "description": "Dow 30",
+                            "proName": "CURRENCYCOM:US30"
+                        }, {
+                            "description": "SmallCap 2000",
+                            "proName": "CME_MINI:RTY1!"
+                        }],
+                        "colorTheme": "light",
+                        "isTransparent": false,
+                        "locale": "en"
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+            <div class="wrapper">
+                <h1 class="marketTitle">Market Overview</h1>
+                <!-- TradingView Widget BEGIN -->
+                <div class="marketGraph">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                        {
+                            "width": 1330,
+                            "height": 492,
+                            "symbolsGroups": [{
+                                "name": "Indices",
+                                "originalName": "Indices",
+                                "symbols": [{
+                                    "name": "OANDA:SPX500USD",
+                                    "displayName": "S&P 500"
+                                }, {
+                                    "name": "OANDA:NAS100USD",
+                                    "displayName": "Nasdaq 100"
+                                }, {
+                                    "name": "FOREXCOM:DJI",
+                                    "displayName": "Dow 30"
+                                }, {
+                                    "name": "INDEX:NKY",
+                                    "displayName": "Nikkei 225"
+                                }, {
+                                    "name": "INDEX:DEU30",
+                                    "displayName": "DAX Index"
+                                }, {
+                                    "name": "OANDA:UK100GBP",
+                                    "displayName": "FTSE 100"
+                                }]
+                            }, {
+                                "name": "Commodities",
+                                "originalName": "Commodities",
+                                "symbols": [{
+                                    "name": "CME_MINI:ES1!",
+                                    "displayName": "E-Mini S&P"
+                                }, {
+                                    "name": "CME:6E1!",
+                                    "displayName": "Euro"
+                                }, {
+                                    "name": "COMEX:GC1!",
+                                    "displayName": "Gold"
+                                }, {
+                                    "name": "NYMEX:CL1!",
+                                    "displayName": "Crude Oil"
+                                }, {
+                                    "name": "NYMEX:NG1!",
+                                    "displayName": "Natural Gas"
+                                }, {
+                                    "name": "CBOT:ZC1!",
+                                    "displayName": "Corn"
+                                }]
+                            }, {
+                                "name": "Bonds",
+                                "originalName": "Bonds",
+                                "symbols": [{
+                                    "name": "CME:GE1!",
+                                    "displayName": "Eurodollar"
+                                }, {
+                                    "name": "CBOT:ZB1!",
+                                    "displayName": "T-Bond"
+                                }, {
+                                    "name": "CBOT:UB1!",
+                                    "displayName": "Ultra T-Bond"
+                                }, {
+                                    "name": "EUREX:FGBL1!",
+                                    "displayName": "Euro Bund"
+                                }, {
+                                    "name": "EUREX:FBTP1!",
+                                    "displayName": "Euro BTP"
+                                }, {
+                                    "name": "EUREX:FGBM1!",
+                                    "displayName": "Euro BOBL"
+                                }]
+                            }, {
+                                "name": "Forex",
+                                "originalName": "Forex",
+                                "symbols": [{
+                                    "name": "FX:EURUSD"
+                                }, {
+                                    "name": "FX:GBPUSD"
+                                }, {
+                                    "name": "FX:USDJPY"
+                                }, {
+                                    "name": "FX:USDCHF"
+                                }, {
+                                    "name": "FX:AUDUSD"
+                                }, {
+                                    "name": "FX:USDCAD"
+                                }]
+                            }],
+                            "colorTheme": "light",
+                            "isTransparent": false,
+                            "locale": "en"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+                <h1 class="marketTitle">News</h1>
+                <div class="feedgrabbr_widget" id="fgid_0cd9720627bf443270ba85f11"></div>
+                <script>
+                    if (typeof(fg_widgets) === "undefined") fg_widgets = new Array();
+                    fg_widgets.push("fgid_0cd9720627bf443270ba85f11");
+                </script>
+                <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
+                <h1 class="marketTitle">Economic Calendar</h1>
+                <!-- TradingView Widget BEGIN -->
+                <div class="calendar">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                        {
+                            "colorTheme": "light",
+                            "isTransparent": false,
+                            "width": "510",
+                            "height": "600",
+                            "locale": "en",
+                            "importanceFilter": "-1,0,1"
+                        }
+                    </script>
+                    <div class="brand"><a href="https://www.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank"><span class="blue-text">Economic Calendar</span></a> by TradingView</div>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
 </body>
-
 <footer>
 
     <h4 id="footerText">FoxDelivery Web Design, Copyright &copy; 2020</h4>

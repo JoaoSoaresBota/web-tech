@@ -11,19 +11,44 @@
 </head>
 
 <body>
-    <header>
+    <nav>
         <img src="/assets/logo.png" alt="logo" id="Logo">
-        <nav>
-            <ul class="links">
-                <li><a href="/project/index.html">Home</a></li>
-                <li><a href="/project/market.html">Market</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="/project/about.html">About</a></li>
-            </ul>
-        </nav>
-        <a href="#"><button class="cta">Stocks</button></a>
-    </header>
-    <h1>Currently on work!! Wait patiently!</h1>
+        <ul class="links">
+            <li><a href="/project/index.html" class="item">Home</a></li>
+            <li><a href="/project/market.html" class="item">Market</a></li>
+            <li><a href="#" class="item">Contact</a></li>
+            <li><a href="/project/about.html" class="item">About</a></li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="border: 0;"><input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/project/equities/amazon.html">Amazon</a>
+                    <a href="/project/equities/apple.html">Apple</a>
+                    <a href="/project/equities/facebook.html">Facebook</a>
+                    <a href="/project/equities/tesla.html">Tesla</a>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                function filterFunction() {
+                    var input, filter, ul, li, a, i;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    div = document.getElementById("myDropdown");
+                    a = div.getElementsByTagName("a");
+                    for (i = 0; i < a.length; i++) {
+                        txtValue = a[i].textContent || a[i].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            a[i].style.display = "";
+                        } else {
+                            a[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
+            <h1>Currently on work!! Wait patiently!</h1>
 </body>
 
 <footer>
