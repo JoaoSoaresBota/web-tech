@@ -48,6 +48,30 @@
                     }
                 }
             </script>
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                    {
+                        "symbols": [{
+                            "proName": "OANDA:SPX500USD",
+                            "title": "S&P 500"
+                        }, {
+                            "proName": "OANDA:NAS100USD",
+                            "title": "Nasdaq 100"
+                        }, {
+                            "description": "Dow 30",
+                            "proName": "CURRENCYCOM:US30"
+                        }, {
+                            "description": "SmallCap 2000",
+                            "proName": "CME_MINI:RTY1!"
+                        }],
+                        "colorTheme": "light",
+                        "isTransparent": false,
+                        "locale": "en"
+                    }
+                </script>
+            </div>
             <div class="wrapper">
                 <!-- TradingView Widget BEGIN -->
                 <div class="tradingview-widget-container">
@@ -156,9 +180,7 @@
             damage as a result of your trading, or your reliance on the information contained within this website. It is prohibited to use, store, reproduce, display, modify, transmit or distribute the data contained in this website without the explicit
             prior written permission of Fusion Media and/or the data provider. All intellectual property rights are reserved by the providers and/or the exchange providing the data contained in this website. Fusion Media may be compensated by the advertisers
             that appear on the website, based on your interaction with the advertisements or advertisers.</p>
-
     </div>
-
 </footer>
 
 </html>
